@@ -1,0 +1,43 @@
+{
+  "name": "@hyperpaas-biz-modules/demo002",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.es.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@hp-view/theme": "^1.0.1",
+    "@hyperpaas-biz-modules/pro-banner": "^0.0.3",
+    "@hyperpaas/hyper-biz-controller": "^0.1.16",
+    "@icon-park/react": "^1.4.2",
+    "antd": "4.22.3",
+    "react": "^18.2.0",
+    "react-color": "^2.19.3",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.1",
+    "@types/react": "^18.0.19",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.1.0",
+    "less": "^4.1.3",
+    "vite": "^3.1.0",
+    "vite-plugin-mkcert": "^1.9.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js"
+    }
+  },
+  "files": [
+    "package.json",
+    "src",
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://nexus.hyperpaas-inc.com/repository/npm"
+  }
+}
